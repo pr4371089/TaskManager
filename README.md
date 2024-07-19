@@ -1,36 +1,19 @@
-TaskMaster Chatbot
-Overview
-TaskMaster is a chatbot designed to help users manage their tasks efficiently. It leverages natural language processing to understand user commands and provide relevant responses. This chatbot can be integrated into various platforms to assist with task management.
+# Task Master Chatbot ReadMe
+## Introduction
+Welcome to Task Master Chatbot! This README.md provides a structured guide for creating and deploying a Task Master chatbot using Hugging Face Spaces and Gradio. This chatbot helps users manage their tasks efficiently by leveraging the power of large language models (LLMs). Follow this guide to understand the code, what the application will do, and how to deploy your own Task Master chatbot.
+# What This Application Will Do
+## The Task Master Chatbot is designed to:
 
-Features
-Task Creation: Add new tasks with specific details.
-Task Management: Update, delete, and mark tasks as complete.
-Reminders: Set reminders for important tasks.
-Natural Language Understanding: Understands and processes user commands in natural language.
-Getting Started
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+Manage Tasks: Create, edit, and delete tasks through conversational commands.
+Set Reminders: Assign due dates and receive reminders for tasks.
+Track Progress: Monitor the status of ongoing tasks.
+Prioritize Tasks: Assign priority levels to tasks to help users focus on what's important.
+Interactive Interface: Use natural language processing to provide a user-friendly experience.
+# Code Overview
+## The code for the Task Master Chatbot includes:
 
-Prerequisites
-Python 3.7 or higher
-Required libraries listed in requirements.txt
-Installing and Running the Project
-Clone the repository:
-git clone https://github.com/your-repo/taskmaster-chatbot.git
-cd taskmaster-chatbot
-
-Install the required libraries:
-pip install -r requirements.txt
-
-Run the application:
-python app.py
-
-Code Structure
-The codebase is organized as follows:
-
-app.py: The main application file that runs the chatbot.
-requirements.txt: A file listing all the dependencies required to run the project.
-models/: Directory containing pre-trained models and any custom models used.
-data/: Directory for storing any datasets used for training or testing.
-utils/: Utility functions and helper scripts.
-Usage
-Once the application is running, you can interact with the chatbot through the designated platform (e.g., web interface, messaging app). The chatbot will guide you through creating, managing, and setting reminders for your tasks.
+ App Configuration: Setting up the Gradio interface and loading the selected LLM model.
+Task Management Logic: Functions to create, edit, delete, and list tasks.
+Reminder and Notification System: Functions to set reminders and send notifications.
+Natural Language Processing: Code to process user inputs and generate appropriate responses.
+Deployment Script: Instructions to deploy the chatbot on Hugging Face Spaces.
