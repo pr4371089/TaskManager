@@ -1,56 +1,36 @@
-###Task Master Chatbot ReadMe
-#Introduction
-Welcome to Task Master Chatbot! This README.md provides a structured guide for creating and deploying a Task Master chatbot using Hugging Face Spaces and Gradio. This chatbot helps users manage their tasks efficiently by leveraging the power of large language models (LLMs). Follow this guide to understand the code, what the application will do, and how to deploy your own Task Master chatbot.
+TaskMaster Chatbot
+Overview
+TaskMaster is a chatbot designed to help users manage their tasks efficiently. It leverages natural language processing to understand user commands and provide relevant responses. This chatbot can be integrated into various platforms to assist with task management.
 
-###What This Application Will Do
-The Task Master Chatbot is designed to:
+Features
+Task Creation: Add new tasks with specific details.
+Task Management: Update, delete, and mark tasks as complete.
+Reminders: Set reminders for important tasks.
+Natural Language Understanding: Understands and processes user commands in natural language.
+Getting Started
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-Manage Tasks: Create, edit, and delete tasks through conversational commands.
-Set Reminders: Assign due dates and receive reminders for tasks.
-Track Progress: Monitor the status of ongoing tasks.
-Prioritize Tasks: Assign priority levels to tasks to help users focus on what's important.
-Interactive Interface: Use natural language processing to provide a user-friendly experience.
-###Code Overview
-The code for the Task Master Chatbot includes:
-
-###App Configuration: Setting up the Gradio interface and loading the selected LLM model.
-Task Management Logic: Functions to create, edit, delete, and list tasks.
-Reminder and Notification System: Functions to set reminders and send notifications.
-Natural Language Processing: Code to process user inputs and generate appropriate responses.
-Deployment Script: Instructions to deploy the chatbot on Hugging Face Spaces.
 Prerequisites
-Before you start creating your chatbot, make sure you have the following:
+Python 3.7 or higher
+Required libraries listed in requirements.txt
+Installing and Running the Project
+Clone the repository:
+git clone https://github.com/your-repo/taskmaster-chatbot.git
+cd taskmaster-chatbot
 
-##A Hugging Face Account: Essential for accessing the platform where you'll build and host your chatbot. Sign up here.
-###Setup and Deployment
-1. Choosing Your Chatbot’s Identity
-Decide what your chatbot will specialize in. For Task Master Chatbot, it will focus on managing tasks, setting reminders, and tracking progress. The role you choose will define the interactions and capabilities of your chatbot.
+Install the required libraries:
+pip install -r requirements.txt
 
-2. Logging into Hugging Face
-Log in to your Hugging Face account. If you don't have an account, signing up is straightforward and quick.
+Run the application:
+python app.py
 
-3. Navigating to Hugging Face Spaces
-Spaces are where the magic happens. This section of Hugging Face allows users to create and manage their applications seamlessly. Navigate to Spaces to get started.
+Code Structure
+The codebase is organized as follows:
 
-4. Creating Your Space
-Initiate a new space by clicking on 'Create New Space'. It’s important that the name of your Space reflects the chatbot's role, as it helps in identifying the application’s purpose at a glance.
-
-5. Configuring Your Chatbot
-Selecting the Framework and Model
-Choose 'Gradio' as the framework for its user-friendly interface capabilities, and select a suitable model, such as 'Zephyr 7B', known for its versatility across various tasks.
-
-###Customization
-Here’s where you personalize the chatbot. For Task Master Chatbot, you might want to tailor system messages to help users manage their tasks effectively. Customize the interaction style to ensure the chatbot provides helpful and relevant task management advice.
-
-Deployment
-Once setup is complete, deploy your chatbot by simply clicking the create button. Deployment usually takes a couple of minutes. After this, your chatbot will be up and running and ready to interact.
-
-Customization Example
-To make your Task Master Chatbot truly unique:
-
-Modify System Messages: Include helpful task management tips and motivational phrases.
-Program Specific Features: Enable the chatbot to set reminders, track task progress, and provide productivity advice.
-Explore different roles and tweak the system instructions to discover the full potential of your chatbot. Share your creations and experiences to inspire others in their chatbot development.
-
-Contributing
-If you wish to contribute, please fork this repo and submit a pull request.
+app.py: The main application file that runs the chatbot.
+requirements.txt: A file listing all the dependencies required to run the project.
+models/: Directory containing pre-trained models and any custom models used.
+data/: Directory for storing any datasets used for training or testing.
+utils/: Utility functions and helper scripts.
+Usage
+Once the application is running, you can interact with the chatbot through the designated platform (e.g., web interface, messaging app). The chatbot will guide you through creating, managing, and setting reminders for your tasks.
